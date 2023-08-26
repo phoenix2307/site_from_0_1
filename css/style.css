@@ -9,6 +9,9 @@ html{
     margin: 0;
     padding: 0;
 }
+html, body{
+    height: 100%;
+}
 
 ul{
     list-style: none;
@@ -19,6 +22,12 @@ a{
     color: inherit;
 }
 /*Стилізація*/
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .container{
     max-width: 1220px;
     margin: 0 auto;
@@ -28,6 +37,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.25;
 }
 .header{
     background-color: #151515;
@@ -55,4 +65,51 @@ body{
     color: white;
     text-transform: uppercase;
     font-weight: 700;
+}
+.footer{
+    background-color: #151515;
+    padding: 50px 0 32px;
+    color: #ffffff;
+}
+
+
+.footer__menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer__menu-list{
+    max-width: 225px;
+}
+.footer__menu-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.footer__menu-item + .footer__menu-item{
+    padding-top: 20px;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.footer__copy{
+    max-width: 806px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.copy__nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main{
+    flex-grow: 1;
 }
