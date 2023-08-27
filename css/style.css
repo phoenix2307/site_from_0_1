@@ -78,7 +78,7 @@ body {
 .header-main {
     background-color: transparent;
     position: absolute;
-    z-index: 5;
+    z-index: 10;
     left: 0;
     right: 0;
 }
@@ -325,4 +325,27 @@ body {
 .video__content{
     display: block;
     margin: 0 auto;
+}
+
+.important{
+    padding-bottom: 150px;
+}
+
+.important__title{
+    margin-bottom: 20px;
+}
+
+.important__text{
+    margin: 0 auto 50px;
+    max-width: 580px;
+}
+
+.important__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.important__item-img{
+    margin-bottom: 20px;
 }
