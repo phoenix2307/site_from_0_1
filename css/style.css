@@ -349,3 +349,77 @@ body {
 .important__item-img{
     margin-bottom: 20px;
 }
+
+.contacts{
+    padding: 100px 0 150px;
+}
+
+.contacts__title{
+    margin-bottom: 20px;
+}
+
+.contacts__text{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 100px;
+}
+
+.form{
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__input{
+    width: 270px;
+    padding: 18px 20px;
+    display: inline-block;
+    border: 1px solid #0066ff;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #000;
+}
+
+.form::placeholder,
+.form__textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #000;
+    opacity: 0.5;
+}
+
+.form__textarea{
+    width: 100%;
+    resize: none;
+    padding: 28px 20px;
+    height: 290px;
+    border: 1px solid #0066ff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+
+.form__btn{
+    text-transform: uppercase;
+    color: white;
+    background-color: #151515;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 13px 61px;
+    margin: 0 auto;
+}
