@@ -1,14 +1,14 @@
-
 /*Заготовки*/
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before{
+*, *::after, *::before {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
+
 /*для прижимання футера вниз:
 - задаємо висоту головним тегам
 html, body{
@@ -30,46 +30,49 @@ html, body{
 }
 
 */
-html, body{
+html, body {
     height: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
+
 /*Стилізація*/
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
-.container{
+
+.container {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
 }
-body{
+
+body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
 }
-.header{
+
+.header {
     background-color: #151515;
 }
 
-.header-main{
-    /*background-color: transparent;*/
-
+.header-main {
+    background-color: transparent;
 }
 
-.header__inner{
+.header__inner {
     padding-top: 40px;
     padding-bottom: 45px;
     display: flex;
@@ -77,60 +80,93 @@ body{
     align-items: flex-end;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     gap: 35px;
 }
 
-.menu__list-link{
+.menu__list-link {
     color: white;
     text-transform: uppercase;
     font-weight: 700;
 }
-.footer{
+
+.footer {
     background-color: #151515;
     padding: 50px 0 32px;
     color: #ffffff;
 }
 
 
-.footer__menu{
+.footer__menu {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
 }
 
-.footer__menu-list{
+.footer__menu-list {
     max-width: 225px;
 }
-.footer__menu-title{
+
+.footer__menu-title {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 20px;
 }
-.footer__menu-item + .footer__menu-item{
+
+.footer__menu-item + .footer__menu-item {
     padding-top: 20px;
 }
 
-.app{
+.app {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-bottom: 52px;
 }
 
-.footer__copy{
+.footer__copy {
     max-width: 806px;
     margin: 0 auto 30px;
     text-align: center;
     font-size: 12px;
 }
-.copy__nav-list{
+
+.copy__nav-list {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
-.main{
+.main {
     flex-grow: 1;
+}
+
+.top {
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 50px;
+}
+
+.title {
+    /*padding-top: 105px;*/
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link {
+    /*для нормального застосування css
+    для строкового елементу*/
+    display: inline-block;
+    background-color: #151515;
+    color: #ffffff;
+    padding: 23px;
+    max-width: 430px;
+    /*для застосування максимальної ширини прописуємо
+    width 100%*/
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
